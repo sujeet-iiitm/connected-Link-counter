@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Generator</title>
+    <link rel="stylesheet" href="count.css">
+  </head>
+  <body>
+    <header>
+    <h1>Link Counter:</h1>
+    <p>let's count the total number of link <br/>connectedd(internally/externally) with <br/>any server-link's</p>
+    </header>
+
+     <form class="frm">
+       <label for="text">Paste the link:</label>
+       <input type="text" name="text" id="text">
+       <input type="file" id="filess" accept=".c">
+       <button onclick="readfile()">Submit</button>
+    </form>
+    <p id="answer"></p>
+     
+    <script src="count.js"></script>
+
+    <?php
+$file = fopen("Ques.c","r");
+
+while(! feof($file))
+  {
+  echo fgets($file). "<br />";
+  }
+
+fclose($file);
+?>
+  </body>
+</html>

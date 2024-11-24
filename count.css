@@ -1,0 +1,15 @@
+header{
+    height:60px;
+    background-color:lightgreen;
+    color:grey;
+    border-radius:8px;
+    text-align:center;
+    
+  }
+  form{
+    margin-top:100px;
+  }
+  
+  body{
+    background-color:grey;
+  }
